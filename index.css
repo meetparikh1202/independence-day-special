@@ -1,0 +1,241 @@
+body {
+	display: flex;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	background-image: url(./assets/images/scene.jpg);
+}
+
+.playground {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-evenly;
+}
+.puzzle {
+	display: flex;
+}
+.cardContainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 700px;
+}
+
+.dropContainer {
+	display: grid;
+	grid-template-columns: 150px 150px 150px;
+	grid-template-rows: 150px 150px 150px;
+}
+.quizGame {
+	background: antiquewhite;
+	padding: 50px;
+}
+
+.card {
+	height: 150px;
+	width: 150px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.drop {
+	background-color: rgb(231, 244, 206);
+	height: 150px;
+	width: 150px;
+	border: 1px solid black;
+}
+
+.flagHoisting {
+	position: relative;
+	height: 586px;
+	width: 110px;
+}
+
+.flagImg {
+	opacity: 0;
+}
+
+.flagStand {
+	position: absolute;
+	border: 3px solid darkslategrey;
+	height: 400px;
+	left: 36px;
+	top: 25px;
+}
+
+.flagBox {
+	height: 20px;
+	width: 20px;
+	background-color: black;
+	position: absolute;
+	left: 29px;
+	top: 350px;
+	transition: top ease-in 1s;
+}
+.flagStand::before {
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	top: -4px;
+	left: -7.5px;
+	width: 15px;
+	height: 15px;
+	background-color: black;
+}
+
+.flagStand::after {
+	border-radius: 50%;
+	content: "";
+	position: absolute;
+	bottom: -40px;
+	left: -50.5px;
+	width: 100px;
+	height: 43px;
+	background-color: black;
+}
+
+.flagSupport {
+	height: 30px;
+	position: absolute;
+	bottom: 140px;
+	width: 50px;
+	background-color: darkslategrey;
+	left: 13px;
+}
+
+.flagAnim {
+	animation: flagAnim 3s ease-in;
+}
+
+@keyframes flagAnim {
+	20% {
+		opacity: 0.5;
+	}
+
+	70% {
+		opacity: 0.7;
+	}
+
+	100%,
+	0% {
+		opacity: 1;
+	}
+}
+
+.selection {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.gameCard {
+	position: relative;
+}
+
+.cardFront {
+	width: 250px;
+	height: 250px;
+	background-color: aliceblue;
+	box-shadow: 10px 10px 20px black;
+	position: relative;
+	transition: transform 500ms ease-in;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.locked {
+	background-color: gray;
+}
+
+.unlocked {
+	background-color: lightskyblue;
+}
+
+.cardBack {
+	position: absolute;
+	background-color: white;
+	text-align: center;
+	top: 0px;
+	z-index: -1;
+	display: flex;
+	align-items: end;
+	justify-content: center;
+	height: 250px;
+	width: 250px;
+	transition: top 500ms ease-in;
+}
+
+.gameCard:hover .cardFront {
+	transform: translate(0, -50px);
+}
+
+.gameCard:hover .cardBack {
+	top: 50px;
+}
+
+.next {
+	position: absolute;
+	bottom: 70px;
+	background-color: #3e590b;
+	color: white;
+	padding: 10px;
+	letter-spacing: 10;
+}
+
+.next p {
+	text-align: center;
+}
+
+.flagHoistingBg {
+	background-image: url(./assets/images/stadium.png);
+	background-size: contain;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+}
+
+.crowd {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 574px;
+	left: 0;
+	background-color: #fbfefc;
+}
+
+.crowdImg {
+	opacity: 0;
+}
+
+.flagHoistTitle {
+	background-color: white;
+	padding: 5px;
+	margin-top: -100px;
+	z-index: 3;
+	text-align: center;
+}
+
+.independenceDay {
+	position: absolute;
+	left: display;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 349px;
+	transform: scaleX(1.5);
+	box-shadow: 0px 0px 25px orange;
+	display: none;
+}
+.crowdWrapper {
+	display: flex;
+}

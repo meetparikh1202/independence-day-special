@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+
+		<title>Independence Day</title>
+	</head>
+	<body>
+		<div class="selection">
+			<div class="game1 gameCard" onclick="startGame(`1`)">
+				<div class="cardFront unlocked">
+					<div class="title">
+						<h2>Quiz 🧐</h2>
+					</div>
+				</div>
+				<div class="cardBack">
+					<div class="description">
+						<p>
+							Let's play... 🥳 <br />How well do you know India
+							and our leaders?
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="game2 gameCard" onclick="startGame(`2`)">
+				<div class="cardFront locked">
+					<div class="title">
+						<h2>Puzzle 🧩</h2>
+					</div>
+				</div>
+				<div class="cardBack">
+					<div class="description">
+						<p>
+							Solve it, if you can! 😎<br />But first complete
+							Level 1.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="game3 gameCard" onclick="startGame(`3`)">
+				<div class="cardFront locked">
+					<div class="title">
+						<h2>Flag Hoisting ⛳️</h2>
+					</div>
+				</div>
+				<div class="cardBack">
+					<div class="description">
+						<p>Unlock Level 1 and 2 to <br />hoist the flag! 🇮🇳</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Puzzle: Level 2</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="playground">
+			<div class="puzzle">
+				<div class="cardContainer">
+					<img
+						src="./assets/images/row-1-column-3.png"
+						draggable="true"
+						id="card1"
+						ondragstart="drag(event)"
+						class="card"
+					/>
+					<img
+						src="./assets/images/row-1-column-1.png"
+						draggable="true"
+						id="card2"
+						ondragstart="drag(event)"
+						class="card"
+					/>
+					<img
+						src="./assets/images/row-3-column-2.png"
+						draggable="true"
+						id="card3"
+						ondragstart="drag(event)"
+						class="card"
+					/>
+					<img
+						src="./assets/images/row-2-column-1.png"
+						draggable="true"
+						id="card4"
+						ondragstart="drag(event)"
+						class="card"
+					/>
+					<img
+						src="./assets/images/row-1-column-2.png"
+						draggable="true"
+						id="card5"
+						ondragstart="drag(event)"
+						class="card"
+					/>
+					<img
+						src="./assets/images/row-2-column-2.png"
+						draggable="true"
+						id="card6"
+						ondragstart="drag(event)"
+						class="card"
+					/>
+					<img
+						src="./assets/images/row-3-column-1.png"
+						draggable="true"
+						id="card7"
+						ondragstart="drag(event)"
+						class="card"
+					/>
+					<img
+						src="./assets/images/row-2-column-3.png"
+						draggable="true"
+						id="card8"
+						ondragstart="drag(event)"
+						class="card"
+					/>
+					<img
+						src="./assets/images/row-3-column-3.png"
+						draggable="true"
+						id="card9"
+						ondragstart="drag(event)"
+						class="card"
+					/>
+				</div>
+				<div class="dropContainer">
+					<div
+						class="drop drop1"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></div>
+					<div
+						class="drop drop2"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></div>
+					<div
+						class="drop drop3"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></div>
+					<div
+						class="drop drop4"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></div>
+					<div
+						class="drop drop5"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></div>
+					<div
+						class="drop drop6"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></div>
+					<div
+						class="drop drop7"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></div>
+					<div
+						class="drop drop8"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></div>
+					<div
+						class="drop drop9"
+						ondrop="drop(event)"
+						ondragover="allowDrop(event)"
+					></div>
+				</div>
+			</div>
+		</div>
+		<div class="next" onclick="startGame('3')"><p>NEXT</p></div>
+		<script src="index.js"></script>
+	</body>
+</html>

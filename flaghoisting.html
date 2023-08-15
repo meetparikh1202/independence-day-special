@@ -1,0 +1,42 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flag Hoisting</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body class="flagHoistingBg">
+		<div class="flagHoistTitle">
+			<h2>Click the black box below <br />to hoist the flag</h2>
+		</div>
+		<div class="playground">
+			<div class="flagHoisting">
+				<div class="flag">
+					<img class="flagImg" src="./assets/images/india-flag.gif" />
+				</div>
+				<div class="flagStand"></div>
+				<div class="flagBox" onclick="hoistflag()"></div>
+				<div class="flagSupport"></div>
+			</div>
+		</div>
+		<div class="crowd">
+			<img
+				class="crowdImg"
+				width="500"
+				height="200"
+				src="./assets/images/crowd-clapping.gif"
+			/>
+		</div>
+
+		<div class="independenceDay">
+			<img
+				class="independenceDayImg"
+				width="500"
+				height="200"
+				src="./assets/images/independence-day.png"
+			/>
+		</div>
+		<audio class="crowdClappingAudio"></audio>
+		<script src="index.js"></script>
+	</body>
+</html>
