@@ -60,7 +60,7 @@ const startGame = (level) => {
 	}
 
 	if (level === "2") {
-		if (!document.referrer.includes("index.html")) {
+		if (!(document.referrer.endsWith('/') || window.location.href.includes('/quiz.html'))) {
 			alert("Please complete level 1 🧐");
 			return;
 		}
@@ -281,6 +281,11 @@ const drop = (ev) => {
 
 // Flag hoisting
 const hoistflag = () => {
+	if (!document.referrer.includes("puzzle.html")) {
+		alert("Please complete level 1 🧐and level 2 🧩");
+		return;
+	}
+
 	/* Select elements from the HTML document using the `document.querySelector()` 
 	and modify their styles and properties. */
 
